@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validated log form</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="lable">پنل کاربر</h1>
+      <form
+        class="login_form" action="./home.html" method="post" name="form" onsubmit="return validate()" >
+        <div class="font">ایمیل یا شماره موبایل</div>
+        <input autocomplete="off" type="text" name="email" id="email" />
+        <div id="email_error">لطفا ایمیل را وراد کنید</div>
+        <div class="font font2">رمز عبور</div>
+        <input type="password " name="password" id="pass"/>
+        <div id="pass_error">لطفا رمز را وارد کنید</div>
+        <!-- <input type="checkbox" />مرا به خاطر بسپار  -->
+        <div class="fg_pass">
+          <a class="fg_pass" href="./fg_pass.html">بازیابی رمز عبور </a>
+        </div>
+        <button class="submit" onclick="validate()">ورود به پنل کاربری</button>
+      </form>
+    </div>
+
+    <script src="./js/min.js"></script>
+  </body>
+</html>

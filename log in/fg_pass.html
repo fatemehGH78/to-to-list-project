@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+
+    <div class="container">
+        <h1 class="lable">بازیابی رمزعبور</h1>
+        <form
+          class="login_form"
+          method="post"
+          name="form"
+          onsubmit="return validate()"
+          action="/home.html"
+        >
+          <div class="font"> رمزعبور جدید را وارد کنید</div>
+          <input autocomplete="off" type="text" name="email" />
+          <div id="email_error"> رمزعبور جدید را تکرار کنی</div>
+          <div class="font font2">رمز عبور </div>
+          <input type="password " name="password" />
+          <div id="pass_error">رمزعبور جدید را تکرار کنید</div>
+         <!-- <input type="checkbox" />مرا به خاطر بسپار  -->
+          <button class="submit">تغییر رمز</button>
+        </form>
+      </div>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
